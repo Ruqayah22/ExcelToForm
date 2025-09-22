@@ -327,7 +327,7 @@ export default function ExcelToQuotationForm() {
                   ["Date", "Date"],
                   ["Customer Ref.Nr", "Customer_RefNr"],
                   ["Validation to", "Validation_to"],
-                  ["Person In Charge", "Person_In_Charge"],
+                  ["Person In Charge", "Customer_Name"], //"Person_In_Charge"
                   ["Currency", "Currency"],
                   ["Transport", "Transport"],
                   ["Delivery Terms", "Delivery_Terms"],
@@ -353,14 +353,16 @@ export default function ExcelToQuotationForm() {
             </Grid>
           </Grid>
 
-          <Typography sx={{
+          <Typography
+            sx={{
               mt: 3,
               fontWeight: 700,
               fontSize: 25,
               display: "flex",
               alignItems: "flex-start",
               marginLeft: "30px",
-            }}>
+            }}
+          >
             Dear Sir:&nbsp;
             <span style={{ fontWeight: 700 }}>{meta.Customer_Name || ""}</span>
           </Typography>
