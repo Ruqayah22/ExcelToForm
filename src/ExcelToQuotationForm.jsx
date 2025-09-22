@@ -353,7 +353,14 @@ export default function ExcelToQuotationForm() {
             </Grid>
           </Grid>
 
-          <Typography sx={{ mt: 3, fontWeight: 700, fontSize: 25, ml: "30px" }}>
+          <Typography sx={{
+              mt: 3,
+              fontWeight: 700,
+              fontSize: 25,
+              display: "flex",
+              alignItems: "flex-start",
+              marginLeft: "30px",
+            }}>
             Dear Sir:&nbsp;
             <span style={{ fontWeight: 700 }}>{meta.Customer_Name || ""}</span>
           </Typography>
